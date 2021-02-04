@@ -1,0 +1,28 @@
+<div class="backdrop"></div>
+<header class="main-header">
+    <button id="side-menu-toggle">Menu</button>
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+            <li class="main-header__item">
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/images' ? 'active' : '' %>" href="/images">Images</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/search' ? 'active' : '' %>" href="/search">Search</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/fave' ? 'active' : '' %>" href="/fave">Fave</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/add-image' ? 'active' : '' %>" href="/admin/add-image">Add Image</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/images' ? 'active' : '' %>" href="/admin/images">Admin
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
