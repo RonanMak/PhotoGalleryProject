@@ -1,0 +1,40 @@
+.form-control {
+  margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+
+.form-control input,
+.form-control textarea {
+  border: 1px solid #2a9d8f;
+  font: inherit;
+  border-radius: 2px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline-color: #264653;
+}
+
+.updateText{
+  font-size: 3rem;
+}
+
+hr{
+  border: 1px solid #e76f51;
+}
+
+#title, #imageUrl, #date, #description{
+  font-size: 3rem;
+}
+
+.form-control{
+  font-size: 2rem;
+  color: #264653; 
+}

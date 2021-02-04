@@ -1,0 +1,36 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css"> 
+    <link rel="stylesheet" href="/css/image.css">
+</head>
+
+<body>
+   <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <form class="image-form" action="/admin/<% if (editing) { %>edit-image<% } else { %>add-image<% } %>" method="POST">
+            <div class="form-control">
+                <label for="title" class="updateText">Update Image Info</label>
+                <hr>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" value="<% if (editing) { %><%= image.title %><% } %>">
+            </div>
+            <div class="form-control">
+                <label for="imageUrl">Image URL</label>
+                <input type="text" name="imageUrl" id="imageUrl" value="<% if (editing) { %><%= image.imageUrl %><% } %>">
+            </div>
+            <div class="form-control">
+                <label for="date">Date</label>
+                <input name="date" id="date" value="<% if (editing) { %><%= image.date %><% } %>">
+            </div>
+            <div class="form-control">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" rows="5"><% if (editing) { %><%= image.description %><% } %></textarea>
+            </div>
+            <% if (editing) { %>
+                <input type="hidden" value="<%= image.id %>" name="imageId">
+            <% } %>
+
+            <button class="btn" type="submit"><% if (editing) { %>Update Image<% } else { %>Add Image<% } %></button>
+        </form>
+    </main>
+<%- include('../includes/end.ejs') %>
