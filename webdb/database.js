@@ -15,7 +15,7 @@ module.exports = sequelize;
 //     host: 'localhost',
 //     user: 'root',
 //     database: 'art-website',
-//     password: 'Abc92407068'
+//     password: '123'
 // });
 
 // module.exports = pool.promise();
